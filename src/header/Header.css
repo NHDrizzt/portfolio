@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-left: 1em;
+    text-decoration: none;
+    color: black;
+}
