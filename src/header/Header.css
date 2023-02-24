@@ -11,26 +11,37 @@ header {
 
 .nav-container {
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+    justify-content: space-evenly;
+    gap: 15px;
     margin-top: 10px;
 }
 
 .header-container {
-    display: block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: fit-content;
-    min-height: 200px;
-    overflow: hidden;
-    background: linear-gradient(to bottom, var(--clr-primary-bg-900), var(--clr-secondary-bg-600));
-    padding: 0px 15px;
+    margin: 0 100px;
 }
 
-@media only screen and (max-width: 600px) {
-    nav {max-width: 675px}
+.image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 47.25%;
+    width: 46.5%;
+    transform: translateX(-50%);
 }
+
+@media screen and (min-width: 675px) {
+}
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (min-width: 600px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1200px) {}
+
+
 
 nav a {
     margin-left: 1em;

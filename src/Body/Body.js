@@ -1,7 +1,7 @@
 import './Body.css'
 function Body() {
     return (
-        <body>
+        <div className='main-content'>
 
         <h1>Nice to meet you! I'm Adam Keyes.</h1>
     
@@ -75,7 +75,7 @@ function Body() {
     
         adamkeyes
     
-        </body>
+        </div>
     )
 }
 
