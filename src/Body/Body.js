@@ -2,10 +2,8 @@ import './Body.css'
 function Body() {
     return (
         <body>
-    
-        adamkeyes
-    
-        Nice to meet you! I'm Adam Keyes.
+
+        <h1>Nice to meet you! I'm Adam Keyes.</h1>
     
         Based in the UK, I'm a front-end developer passionate about
         building accessible web apps that users love.

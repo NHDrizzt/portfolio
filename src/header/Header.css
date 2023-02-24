@@ -1,12 +1,35 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1em;
+    color: var(--clr-white);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
 }
 
-nav {
+.title {
+    text-align: center;
+}
+
+.nav-container {
     display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 10px;
+}
+
+.header-container {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: fit-content;
+    min-height: 200px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, var(--clr-primary-bg-900), var(--clr-secondary-bg-600));
+    padding: 0px 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {max-width: 675px}
 }
 
 nav a {
