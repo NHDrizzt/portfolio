@@ -23,7 +23,6 @@ function Header() {
                     <source media='(min-width: 37.5em)' srcSet='../assets/images/image-profile-tablet.webp'/>
                     <img className="image-wrapper" src={profilePicture} alt="profilepicture"/>
                 </picture>
-                
             </div>
         </header>
     )

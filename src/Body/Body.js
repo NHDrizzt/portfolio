@@ -1,81 +1,81 @@
 import './Body.css'
 function Body() {
     return (
-        <div className='main-content'>
-
-        <h1>Nice to meet you! I'm Adam Keyes.</h1>
+        <main className='main-content'>
+            <article className='about-me'>
+                <h1>Nice to meet you! I'm <span>Gabriel Carvalho.</span></h1>
+                <p>Based in the BR, I'm a fullstack developer passionate about
+                    building accessible web apps that users love.</p>
+                <h3>Contact me</h3>
+            </article>
+            <article className='my-experience'>
+                <h1>HTML</h1>
+                <p>1 Year Experience</p>
     
-        Based in the UK, I'm a front-end developer passionate about
-        building accessible web apps that users love.
+                <h1>CSS</h1>
+                <p>1 Year Experience</p>
     
-        Contact me
+                <h1>JavaScript</h1>
+                <p>1 Year Experience</p>
     
-        HTML
-        4 Years Experience
+                <h1>Accessibility</h1>
+                1 Year Experience
     
-        CSS
-        4 Years Experience
+                <h1>React</h1>
+                1 Year Experience
     
-        JavaScript
-        4 Years Experience
+                <h1>Tailwind</h1>
+                <p>3 Months Experience</p>
+            </article>
+            <article className='my-projects'>
+                <h1>Projects</h1>
     
-        Accessibility
-        4 Years Experience
+                <h3>Contact me</h3>
     
-        React
-        3 Years Experience
+                <p>Design portfolio</p>
+                <p>HTML</p> <p>CSS</p>
+                <p>View project</p>
+                <p>View code</p>
     
-        Sass
-        3 Years Experience
+                <p>E-learning landing page</p>
+                <p>HTML</p> <p>CSS</p>
+                <p>View project</p>
+                <p>View code</p>
     
-        Projects
+                <p>Todo web app</p>
+                <p>HTML</p> <p>CSS</p> <p>JavaScript</p>
+                <p>View project</p>
+                <p>View code</p>
     
-        Contact me
+                <p>Entertainment web app</p>
+                <p>HTML</p> <p>CSS</p> <p>JavaScript</p>
+                <p>View project</p>
+                <p>View code</p>
     
-        Design portfolio
-        HTML CSS
-        View project
-        View code
+                <p>Memory Game</p>
+                <p>HTML</p> <p>CSS</p> <p>JavaScript</p>
+                <p>View project</p>
+                <p>View code</p>
     
-        E-learning landing page
-        HTML CSS
-        View project
-        View code
+                <p>Art gallery showcase</p>
+                <p>HTML</p> <p>CSS</p> <p>JavaScript</p>
+                <p>View project</p>
+                <p>View code</p>
+            </article>
+            
+            <article>
+                <h1>Contact</h1>
     
-        Todo web app
-        HTML CSS JavaScript
-        View project
-        View code
+                <p>I would love to hear about your project and how I could help. Please
+                    fill in the form, and I’ll get back to you as soon as possible.</p>
     
-        Entertainment web app
-        HTML CSS JavaScript
-        View project
-        View code
+                <input type="text"/>Name
+                <input type="text"/>Email
+                <input type="text"/>Message
     
-        Memory Game
-        HTML CSS JavaScript
-        View project
-        View code
-    
-        Art gallery showcase
-        HTML CSS JavaScript
-        View project
-        View code
-    
-        Contact
-    
-        I would love to hear about your project and how I could help. Please
-        fill in the form, and I’ll get back to you as soon as possible.
-    
-        Name
-        Email
-        Message
-    
-        Send message
-    
-        adamkeyes
-    
-        </div>
+                <p>Send message</p>
+            </article>
+        </main>
     )
 }
 
