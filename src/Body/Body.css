@@ -6,7 +6,7 @@
 
 .about-me {
     text-align: center;
-    margin: 32px 16px;
+    margin: 0 16px;
     padding-bottom: 50px;
     width: fit-content;
     border-bottom: 1px solid var(--clr-white);
@@ -34,4 +34,21 @@
     width: fit-content;
     padding: 12px 0;
     letter-spacing: 2px;
+}
+
+.my-experience {
+    text-align: center;
+}
+
+.my-experience h1 {
+    font-size: 32px;
+}
+
+.my-experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 15px;
+    padding: 40px;
+    border-bottom: 1px solid var(--clr-white);
 }

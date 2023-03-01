@@ -9,23 +9,32 @@ function Body() {
                 <h3>Contact me</h3>
             </article>
             <article className='my-experience'>
-                <h1>HTML</h1>
-                <p>1 Year Experience</p>
-    
-                <h1>CSS</h1>
-                <p>1 Year Experience</p>
-    
-                <h1>JavaScript</h1>
-                <p>1 Year Experience</p>
-    
-                <h1>Accessibility</h1>
-                1 Year Experience
-    
-                <h1>React</h1>
-                1 Year Experience
-    
-                <h1>Tailwind</h1>
-                <p>3 Months Experience</p>
+                <div className="my-experience-container">
+                    <div id='html'>
+                        <h1>HTML</h1>
+                        <p>1 Year Experience</p>
+                    </div>
+                    <div id="CSS">
+                        <h1>CSS</h1>
+                        <p>1 Year Experience</p>
+                    </div>
+                    <div id="javascript">
+                        <h1>JavaScript</h1>
+                        <p>1 Year Experience</p>
+                    </div>
+                    <div id="acessibility">
+                        <h1>Accessibility</h1>
+                        <p>1 Year Experience</p>
+                    </div>
+                    <div id="react">
+                        <h1>React</h1>
+                        <p>1 Year Experience</p>
+                    </div>
+                    <div id="tailwind">
+                        <h1>Tailwind</h1>
+                        <p>3 Months Experience</p>
+                    </div>
+                </div>
             </article>
             <article className='my-projects'>
                 <h1>Projects</h1>
