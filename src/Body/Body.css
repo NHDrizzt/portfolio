@@ -6,7 +6,7 @@
 
 .about-me {
     text-align: center;
-    margin: 32px 16px;
+    margin: 0 16px;
     padding-bottom: 50px;
     width: fit-content;
     border-bottom: 1px solid var(--clr-white);
@@ -28,10 +28,150 @@
 .about-me h3 {
     margin: 10px auto;
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 16px;
     text-decoration: none;
     border-bottom: 2px solid var(--clr-primary-flow);
     width: fit-content;
     padding: 12px 0;
+    letter-spacing: 2px;
+}
+
+.my-experience {
+    text-align: center;
+}
+
+.my-experience h1 {
+    font-size: 32px;
+}
+
+.my-experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 15px;
+    padding: 40px;
+    border-bottom: 1px solid var(--clr-white);
+}
+
+.my-projects {
+    margin-bottom: 80px;
+}
+
+.my-projects picture{
+    margin: 20px 0;
+}
+
+.my-projects-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+    padding: 80px 0 20px 0;
+    align-items: center;
+}
+
+.my-projects-header h1 {
+    font-size: 40px;
+}
+
+.my-projects-header h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 2px solid var(--clr-primary-flow);
+    width: fit-content;
+    padding: 12px 0;
+    letter-spacing: 2px;
+}
+
+.project {
+    margin: 0 16px;
+}
+
+.project h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.project-title-tec {
+    display: flex;
+    gap: 18px;
+}
+
+.project-view-code {
+    display: flex;
+    gap: 30px;
+}
+
+.project-view-code h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 2px solid var(--clr-primary-flow);
+    width: fit-content;
+    padding: 12px 0;
+    letter-spacing: 2px;
+}
+
+.contact-me {
+    background-color: var(--clr-secondary-bg-600);
+    text-align: center;
+}
+
+.contact-me-container {
+    padding-top: 60px;
+    margin: 0 16px;
+}
+
+.contact-me-container h1 {
+    font-size: 40px;
+}
+
+.contact-me-container p:first-of-type {
+    font-size: 16px;
+}
+
+.contact-me-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 16px;
+}
+
+.contact-me-inputs input, .contact-me-inputs textarea{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+}
+
+.contact-me-inputs span {
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin-left: 24px;
+    margin-top: 32px;
+}
+
+#contact-me-send-button {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid var(--clr-white);
+}
+
+#contact-me-send-button button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--clr-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--clr-primary-flow);
+    width: fit-content;
+    padding: 12px 0;
+    margin-top: 32px;
+    margin-bottom: 87px;
     letter-spacing: 2px;
 }
