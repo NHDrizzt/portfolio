@@ -22,7 +22,6 @@
 .about-me span {
     border-bottom: 3px solid var(--clr-primary-flow);
     width: fit-content;
-
 }
 
 .about-me h3 {
@@ -35,6 +34,49 @@
     padding: 12px 0;
     letter-spacing: 2px;
 }
+
+@media only screen and (min-width: 1200px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .main-content {
+        margin-top: 127px;
+    }
+
+    .about-me {
+        margin-left: 165px;
+        text-align: left;
+        padding-bottom: 169px;
+        width: 79%;
+    }
+
+    .about-me p {
+        padding: 43px 0;
+        line-height: 28px;
+        font-size: 18px;
+        width: 38%;
+    }
+
+    .about-me h1 {
+        font-size: 88px;
+        line-height: 100px;
+        width: 75%;
+    }
+
+    .about-me h3 {
+        margin: 0;
+    }
+
+
+}
+
 
 .my-experience {
     text-align: center;
@@ -174,4 +216,19 @@
     margin-top: 32px;
     margin-bottom: 87px;
     letter-spacing: 2px;
+    font-family: var(--ff-primary);
+}
+
+.second-ring-image {
+    position: absolute;
+    right: -50%;
+    top: 850px;
+    height: 129px;
+}
+
+.third-ring-image {
+    position: absolute;
+    left: -50%;
+    bottom: 105px;
+    height: 129px;
 }

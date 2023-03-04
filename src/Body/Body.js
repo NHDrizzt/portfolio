@@ -5,13 +5,13 @@ import projectThree from '../assets/images/thumbnail-project-3-small.webp'
 import projectFour from '../assets/images/thumbnail-project-4-small.webp'
 import projectFive from '../assets/images/thumbnail-project-5-small.webp'
 import projectSix from '../assets/images/thumbnail-project-6-small.webp'
-
+import ringImage from '../assets/images/pattern-rings.svg'
 
 function Body() {
     return (
         <main className='main-content'>
             <article className='about-me'>
-                <h1>Nice to meet you! I'm <span>Gabriel Carvalho.</span></h1>
+                <h1>Nice to meet you! <br/> I'm <span>Gabriel Carvalho.</span></h1>
                 <p>Based in the BR, I'm a fullstack developer passionate about
                     building accessible web apps that users love.</p>
                 <h3>Contact me</h3>
@@ -43,6 +43,9 @@ function Body() {
                         <p>3 Months Experience</p>
                     </div>
                 </div>
+                <picture>
+                    <img className='second-ring-image' src={ringImage} alt=""/>
+                </picture>
             </article>
             <article className='my-projects'>
                 <div className="my-projects-header">
@@ -157,6 +160,9 @@ function Body() {
                         </div>
                     </form>
                 </div>
+                <picture>
+                    <img className='third-ring-image' src={ringImage} alt=""/>
+                </picture>
             </article>
         </main>
     )

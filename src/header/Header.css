@@ -5,6 +5,19 @@ header {
     font-weight: var(--fw-regular);
 }
 
+.ring-image {
+    position: absolute;
+    left: -50%;
+    top: 125px;
+    height: 129px;
+}
+
+.circle-image {
+    position: absolute;
+    right: -60px;
+    top: 30%;
+}
+
 .title {
     text-align: center;
 }
@@ -17,15 +30,16 @@ header {
 }
 
 .header-container {
-    margin: 0 100px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .image-wrapper {
     position: absolute;
     top: 0;
     left: 50%;
-    height: 47.25%;
-    width: 46.5%;
+    min-height: 384px;
+    max-width: 174px;
     transform: translateX(-50%);
 }
 
@@ -39,9 +53,69 @@ header {
 
 @media only screen and (min-width: 992px) {}
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    header {
+        padding: 0;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        align-items: center;
+    }
+
+    .header-container h1{
+        text-align: left;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        gap:  30%;
+    }
+
+    .images-header {}
+
+    .image-wrapper {
+        z-index: 0;
+        max-width: 445px;
+        min-height: 720px;
+        left: 75%;
+    }
+
+    .circle-image {
+        z-index: 1;
+        left: 75%;
+    }
+
+    nav {
+    }
+
+    .nav-container {
+        gap: 32px;
+        margin-top: 0;
+    }
+
+    nav img {
+        z-index: 1;
+    }
 
 
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .nav-container {
+
+    }
+
+    nav img {
+
+    }
+}
 
 nav a {
     margin-left: 1em;
