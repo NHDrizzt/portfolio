@@ -120,12 +120,12 @@
         right: 35%;
         top: 45%;
     }
-
 }
 
-
+/* My experience section */
 .my-experience {
     text-align: center;
+    position: relative;
 }
 
 .my-experience h1 {
@@ -139,6 +139,44 @@
     margin: 0 15px;
     padding: 40px;
     border-bottom: 1px solid var(--clr-white);
+}
+
+.second-ring-image {
+    position: absolute;
+    left: 50%;
+    bottom: -7%;
+}
+
+@media(min-width: 62.5em) {
+
+    .my-experience h1 {
+        font-size: 48px;
+    }
+
+    .my-experience p {
+        font-size: 18px;
+    }
+
+    .my-experience {
+        padding-top: 72px;
+    }
+
+    .my-experience-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: left;
+        gap: 50px 0;
+        margin: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .second-ring-image {
+        left: 80%;
+        bottom: -20%;
+    }
+
 }
 
 .my-projects {
@@ -265,12 +303,7 @@
     font-family: var(--ff-primary);
 }
 
-.second-ring-image {
-    position: absolute;
-    right: -50%;
-    top: 850px;
-    height: 129px;
-}
+
 
 .third-ring-image {
     position: absolute;

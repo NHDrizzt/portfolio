@@ -15,7 +15,7 @@ function Body() {
     return (
         <main className='main-content'>
             <article className='about-me'>
-                <div className='wrapper hero-wrapper'>
+                <div className='wrapper'>
                     <div className="hero-content">
                         <picture>
                             <source media='(min-width: 1200px)' srcSet={profilePicture1200}/>
@@ -35,35 +35,37 @@ function Body() {
                 
             </article>
             <article className='my-experience'>
-                <div className="my-experience-container">
-                    <div id='html'>
-                        <h1>HTML</h1>
-                        <p>1 Year Experience</p>
+                <div className='wrapper'>
+                    <div className="my-experience-container">
+                        <div id='html'>
+                            <h1>HTML</h1>
+                            <p>1 Year Experience</p>
+                        </div>
+                        <div id="CSS">
+                            <h1>CSS</h1>
+                            <p>1 Year Experience</p>
+                        </div>
+                        <div id="javascript">
+                            <h1>JavaScript</h1>
+                            <p>1 Year Experience</p>
+                        </div>
+                        <div id="acessibility">
+                            <h1>Accessibility</h1>
+                            <p>1 Year Experience</p>
+                        </div>
+                        <div id="react">
+                            <h1>React</h1>
+                            <p>1 Year Experience</p>
+                        </div>
+                        <div id="tailwind">
+                            <h1>Tailwind</h1>
+                            <p>3 Months Experience</p>
+                        </div>
                     </div>
-                    <div id="CSS">
-                        <h1>CSS</h1>
-                        <p>1 Year Experience</p>
-                    </div>
-                    <div id="javascript">
-                        <h1>JavaScript</h1>
-                        <p>1 Year Experience</p>
-                    </div>
-                    <div id="acessibility">
-                        <h1>Accessibility</h1>
-                        <p>1 Year Experience</p>
-                    </div>
-                    <div id="react">
-                        <h1>React</h1>
-                        <p>1 Year Experience</p>
-                    </div>
-                    <div id="tailwind">
-                        <h1>Tailwind</h1>
-                        <p>3 Months Experience</p>
-                    </div>
+                    <picture>
+                        <img className='second-ring-image' src={ringImage} alt=""/>
+                    </picture>
                 </div>
-                <picture>
-                    <img className='second-ring-image' src={ringImage} alt=""/>
-                </picture>
             </article>
             <article className='my-projects'>
                 <div className="my-projects-header">
