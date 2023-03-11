@@ -6,15 +6,33 @@ import projectFour from '../assets/images/thumbnail-project-4-small.webp'
 import projectFive from '../assets/images/thumbnail-project-5-small.webp'
 import projectSix from '../assets/images/thumbnail-project-6-small.webp'
 import ringImage from '../assets/images/pattern-rings.svg'
+import profilePicture1200 from "../assets/images/image-profile-desktop.webp";
+import profilePicture600 from "../assets/images/image-profile-tablet.webp";
+import profilePicture375 from "../assets/images/image-profile-mobile.webp";
+import circleImage from "../assets/images/pattern-circle.svg";
 
 function Body() {
     return (
         <main className='main-content'>
             <article className='about-me'>
-                <h1>Nice to meet you! <br/> I'm <span>Gabriel Carvalho.</span></h1>
-                <p>Based in the BR, I'm a fullstack developer passionate about
-                    building accessible web apps that users love.</p>
-                <h3>Contact me</h3>
+                <div className='wrapper hero-wrapper'>
+                    <div className="hero-content">
+                        <picture>
+                            <source media='(min-width: 1200px)' srcSet={profilePicture1200}/>
+                            <source media='(min-width: 675px)' srcSet={profilePicture600}/>
+                            <img src={profilePicture375} className="hero-image" srcSet={profilePicture375} alt='profila'/>
+                        </picture>
+                        <img className='ring-image' src={ringImage} alt="ring"/>
+                        <img className='circle-image' src={circleImage} alt="circle"/>
+                        <div className="hero-text">
+                            <h1>Nice to meet you! <br/> I'm <span>Gabriel Carvalho.</span></h1>
+                            <p>Based in the BR, I'm a fullstack developer passionate about
+                                building accessible web apps that users love.</p>
+                            <h3>Contact me</h3>
+                        </div>
+                    </div>
+                </div>
+                
             </article>
             <article className='my-experience'>
                 <div className="my-experience-container">

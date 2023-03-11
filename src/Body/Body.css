@@ -1,30 +1,33 @@
 .main-content {
-    position: relative;
     margin-top: 300px;
     font-family: var(--ff-primary);
 }
 
-.about-me {
+.hero-content {
+    border-bottom: 1px solid var(--clr-white);
+}
+
+.hero-text {
+    position: relative;
     text-align: center;
     margin: 0 16px;
     padding-bottom: 50px;
     width: fit-content;
-    border-bottom: 1px solid var(--clr-white);
 }
 
-.about-me h1 {
+.hero-text h1 {
     font-weight: var(--fw-bold);
     font-size: 32px;
     line-height: 32px;
     padding-bottom: 25px;
 }
 
-.about-me span {
-    border-bottom: 3px solid var(--clr-primary-flow);
+.hero-text span {
+    border-bottom: 6px solid var(--clr-primary-flow);
     width: fit-content;
 }
 
-.about-me h3 {
+.hero-text h3 {
     margin: 10px auto;
     text-transform: uppercase;
     font-size: 16px;
@@ -35,45 +38,88 @@
     letter-spacing: 2px;
 }
 
-@media only screen and (min-width: 1200px) {
+.ring-image {
+    position: absolute;
+    left: -50%;
+    top: 125px;
+    height: 129px;
+}
 
-    * {
-        padding: 0;
-        margin: 0;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-    }
+.circle-image {
+    position: absolute;
+    right: -60px;
+    top: 30%;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    min-height: 384px;
+    max-width: 174px;
+    transform: translateX(-50%);
+}
+
+@media (min-width: 37.5em) {
+
+
+}
+
+@media only screen and (min-width: 62.5em) {
 
     .main-content {
         margin-top: 127px;
     }
 
-    .about-me {
-        margin-left: 165px;
-        text-align: left;
-        padding-bottom: 169px;
-        width: 79%;
+    .hero-content {
+        position: relative;
     }
 
-    .about-me p {
+    .hero-text {
+        text-align: left;
+        margin: 0;
+        padding-bottom: 169px;
+    }
+
+    .hero-text p {
         padding: 43px 0;
         line-height: 28px;
         font-size: 18px;
-        width: 38%;
+        width: 48%;
     }
 
-    .about-me h1 {
+    .hero-text h1 {
         font-size: 88px;
         line-height: 100px;
-        width: 75%;
+        width: 90%;
     }
 
-    .about-me h3 {
+    .hero-text h3 {
         margin: 0;
     }
 
+    .hero-image {
+        margin-block-start: -199px;
+        position: absolute;
+        left: 100%;
+        translate: -50%;
+        max-width: 445px;
+        height: auto;
+        overflow: visible;
+    }
+
+    .ring-image {
+        position: absolute;
+        left: -20%;
+        top: -8%;
+        height: 129px;
+    }
+
+    .circle-image {
+        position: absolute;
+        right: 35%;
+        top: 45%;
+    }
 
 }
 
