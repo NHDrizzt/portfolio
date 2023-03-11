@@ -3,8 +3,8 @@
     font-family: var(--ff-primary);
 }
 
-.about-me {
-    margin-block-start: 0;
+.hero-content {
+    border-bottom: 1px solid var(--clr-white);
 }
 
 .hero-text {
@@ -13,7 +13,6 @@
     margin: 0 16px;
     padding-bottom: 50px;
     width: fit-content;
-    border-bottom: 1px solid var(--clr-white);
 }
 
 .hero-text h1 {
@@ -63,62 +62,64 @@
 
 @media (min-width: 37.5em) {
 
-
-}
-
-@media only screen and (min-width: 62.5em) {
-
     .main-content {
         margin-top: 127px;
     }
 
+    .hero-content {
+        position: relative;
+    }
+
     .hero-text {
-        margin-left: 165px;
         text-align: left;
+        margin: 0;
         padding-bottom: 169px;
-        width: 79%;
     }
 
     .hero-text p {
         padding: 43px 0;
         line-height: 28px;
         font-size: 18px;
-        width: 38%;
+        width: 48%;
     }
 
     .hero-text h1 {
         font-size: 88px;
         line-height: 100px;
-        width: 75%;
+        width: 90%;
     }
 
     .hero-text h3 {
         margin: 0;
     }
 
-    .hero-wrapper {
-
-    }
-
-    .hero-content picture {
-        z-index: -1;
-    }
-
     .hero-image {
         margin-block-start: -199px;
         position: absolute;
-        left: 90%;
+        left: 100%;
         translate: -50%;
         max-width: 445px;
         height: auto;
+        overflow: visible;
+    }
+
+    .ring-image {
+        position: absolute;
+        left: -20%;
+        top: -8%;
+        height: 129px;
     }
 
     .circle-image {
         position: absolute;
-        right: 50%;
-        top: 130px;
-        height: auto;
+        right: 35%;
+        top: 45%;
     }
+}
+
+@media only screen and (min-width: 62.5em) {
+
+
 
 }
 

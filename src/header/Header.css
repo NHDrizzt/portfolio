@@ -1,7 +1,7 @@
 header {
     position: relative;
     z-index: 1;
-    margin-block-start: 20px;
+    padding-top: 20px;
     color: var(--clr-white);
     font-family: var(--ff-primary);
     font-weight: var(--fw-regular);
@@ -25,8 +25,7 @@ header {
 
 @media (min-width: 37.5em) {
     .header {
-        margin-block-start: 30px;
-        /* margin-block-end: 90px; */
+        padding-top: 40px;
     }
 
     .nav-container {
@@ -43,11 +42,6 @@ header {
 }
 
 @media only screen and (min-width: 62.5em) {
-
-    .header {
-        margin-block-start: 40px;
-        margin-block-end: 127px;
-    }
 
     .nav-container {
         padding-right: 30px;
