@@ -117,7 +117,7 @@
 
     .circle-image {
         position: absolute;
-        right: 35%;
+        right: 30%;
         top: 45%;
     }
 }
@@ -179,6 +179,8 @@
 
 }
 
+/*  */
+
 .my-projects {
     margin-bottom: 80px;
 }
@@ -237,6 +239,40 @@
     padding: 12px 0;
     letter-spacing: 2px;
 }
+
+@media(min-width: 62.5em) {
+
+    .my-projects picture {
+        margin: 0;
+    }
+
+    .my-projects-header {
+        padding: 120px 0 40px 0;
+        margin: 0;
+    }
+
+    .project {
+        margin: 0;
+    }
+
+    .project > h2 {
+        padding-top: 10px;
+    }
+
+    .my-projects-header h1 {
+        font-size: 88px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: fit-content;
+    }
+
+}
+
+
 
 .contact-me {
     background-color: var(--clr-secondary-bg-600);
