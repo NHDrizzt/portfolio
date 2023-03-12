@@ -117,15 +117,15 @@
 
     .circle-image {
         position: absolute;
-        right: 35%;
+        right: 30%;
         top: 45%;
     }
-
 }
 
-
+/* My experience section */
 .my-experience {
     text-align: center;
+    position: relative;
 }
 
 .my-experience h1 {
@@ -140,6 +140,46 @@
     padding: 40px;
     border-bottom: 1px solid var(--clr-white);
 }
+
+.second-ring-image {
+    position: absolute;
+    left: 50%;
+    bottom: -7%;
+}
+
+@media(min-width: 62.5em) {
+
+    .my-experience h1 {
+        font-size: 48px;
+    }
+
+    .my-experience p {
+        font-size: 18px;
+    }
+
+    .my-experience {
+        padding-top: 72px;
+    }
+
+    .my-experience-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: left;
+        gap: 50px 0;
+        margin: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .second-ring-image {
+        left: 80%;
+        bottom: -20%;
+    }
+
+}
+
+/* My projects Section */
 
 .my-projects {
     margin-bottom: 80px;
@@ -200,6 +240,40 @@
     letter-spacing: 2px;
 }
 
+@media(min-width: 62.5em) {
+
+    .my-projects picture {
+        margin: 0;
+    }
+
+    .my-projects-header {
+        padding: 120px 0 40px 0;
+        margin: 0;
+    }
+
+    .project {
+        margin: 0;
+    }
+
+    .project > h2 {
+        padding-top: 10px;
+    }
+
+    .my-projects-header h1 {
+        font-size: 88px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: fit-content;
+    }
+
+}
+
+
+/*Contact me section*/
 .contact-me {
     background-color: var(--clr-secondary-bg-600);
     text-align: center;
@@ -265,16 +339,49 @@
     font-family: var(--ff-primary);
 }
 
-.second-ring-image {
-    position: absolute;
-    right: -50%;
-    top: 850px;
-    height: 129px;
-}
+
 
 .third-ring-image {
     position: absolute;
-    left: -50%;
-    bottom: 105px;
-    height: 129px;
+    /*left: -50%;*/
+    /*bottom: 105px;*/
+    /*height: 129px;*/
+}
+
+@media(min-width: 62.5em) {
+    .contact-me-container h1 {
+        font-size: 88px;
+    }
+
+    .contact-me {
+        position: relative;
+    }
+
+    #contact-me-send-button {
+        border-bottom: none;
+    }
+
+    .contact-description {
+        text-align: left;
+        width: 80%;
+    }
+
+    .contact-description > p {
+        padding-top: 15px;
+    }
+
+    .contact-me-container {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        border-bottom: 1px solid white;
+    }
+
+    .third-ring-image {
+        position: absolute;
+        left: 0;
+        top: 65%;
+    }
+
 }
