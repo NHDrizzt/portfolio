@@ -7,15 +7,17 @@ import twitterIcon from '../assets/images/icon-twitter.svg'
 function Footer() {
     return (
         <footer className='footer'>
-            <h1>nhdrizzt</h1>
-            <nav>
+            <div className="wrapper">
                 <div className="nav-footer-container">
-                    <img src={githubIcon} alt="github-icon"/>
-                    <img src={frontEndIcon} alt="github-icon"/>
-                    <img src={linkedinIcon} alt="github-icon"/>
-                    <img src={twitterIcon} alt="github-icon"/>
+                    <h1>nhdrizzt</h1>
+                    <nav>
+                        <img src={githubIcon} alt="github-icon"/>
+                        <img src={frontEndIcon} alt="github-icon"/>
+                        <img src={linkedinIcon} alt="github-icon"/>
+                        <img src={twitterIcon} alt="github-icon"/>
+                    </nav>
                 </div>
-            </nav>
+            </div>
         </footer>
     )
 }
