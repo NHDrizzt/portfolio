@@ -179,7 +179,7 @@
 
 }
 
-/*  */
+/* My projects Section */
 
 .my-projects {
     margin-bottom: 80px;
@@ -273,7 +273,7 @@
 }
 
 
-
+/*Contact me section*/
 .contact-me {
     background-color: var(--clr-secondary-bg-600);
     text-align: center;
@@ -343,7 +343,45 @@
 
 .third-ring-image {
     position: absolute;
-    left: -50%;
-    bottom: 105px;
-    height: 129px;
+    /*left: -50%;*/
+    /*bottom: 105px;*/
+    /*height: 129px;*/
+}
+
+@media(min-width: 62.5em) {
+    .contact-me-container h1 {
+        font-size: 88px;
+    }
+
+    .contact-me {
+        position: relative;
+    }
+
+    #contact-me-send-button {
+        border-bottom: none;
+    }
+
+    .contact-description {
+        text-align: left;
+        width: 80%;
+    }
+
+    .contact-description > p {
+        padding-top: 15px;
+    }
+
+    .contact-me-container {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        border-bottom: 1px solid white;
+    }
+
+    .third-ring-image {
+        position: absolute;
+        left: 0;
+        top: 65%;
+    }
+
 }
