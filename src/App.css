@@ -2,3 +2,17 @@
   background-color: var(--clr-primary-bg-900);
   color: var(--clr-white);
 }
+
+.container-particles-maincontent {
+  height: 100vh;
+}
+
+.container-particles-maincontent #tsparticles {
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
