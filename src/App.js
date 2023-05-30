@@ -1,7 +1,9 @@
 import './App.css'
 import Header from './header/Header';
-import Body from './Body/Body'
 import Footer from "./footer/footer";
+import MainContent from "./Body/MainContent";
+import LowerContent from "./Body/LowerContent";
+import Design from "./utils/Design";
 
 function App() {
   return (
@@ -12,9 +14,16 @@ function App() {
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true'/>
             <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet"/>
         </div>
-        <Header className="Header"/>
-        <Body className="Body" />
-        <Footer/>
+        <div className={"container-particles-maincontent"}>
+            <Design />
+            <Header className="Header"/>
+            <MainContent />
+        </div>
+        <div>
+            <LowerContent />
+            <Footer/>
+        </div>
+     
     </div>
   );
 }
