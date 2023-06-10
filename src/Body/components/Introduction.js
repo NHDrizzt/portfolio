@@ -1,11 +1,15 @@
-import React from 'react';
+import React, {useContext, useRef} from 'react';
 import profilePicture1200 from "../../assets/images/image-profile-desktop.webp";
 import profilePicture600 from "../../assets/images/image-profile-tablet.webp";
 import profilePicture375 from "../../assets/images/image-profile-mobile.webp";
 import ringImage from "../../assets/images/pattern-rings.svg";
 import circleImage from "../../assets/images/pattern-circle.svg";
+import {ScrollToView} from "../../context/ScrollToViewContext";
 
 const Introduction = () => {
+    
+    const { scrollToComponent } = useContext(ScrollToView);
+    
     return (
         <article className='about-me'>
             <div className='wrapper testing'>
@@ -21,7 +25,9 @@ const Introduction = () => {
                         <h1>Nice to meet you! <br/> I'm <span>Gabriel Carvalho.</span></h1>
                         <p>Based in the BR, I'm a fullstack developer passionate about
                             building accessible web apps that users love.</p>
-                        <h3>Contact me</h3>
+                        <button onClick={ scrollToComponent }>
+                            <h3>Contact me</h3>
+                        </button>
                     </div>
                 </div>
             </div>

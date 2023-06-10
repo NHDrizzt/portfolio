@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import projectPictureOneLarge from "../../assets/images/thumbnail-project-1-large.webp";
 import projectOne from "../../assets/images/thumbnail-project-1-small.webp";
 import projectPictureTwoLarge from "../../assets/images/thumbnail-project-2-large.webp";
@@ -12,8 +12,11 @@ import projectFive from "../../assets/images/thumbnail-project-5-small.webp";
 import projectPictureSixLarge from "../../assets/images/thumbnail-project-6-large.webp";
 import projectSix from "../../assets/images/thumbnail-project-6-small.webp";
 import {useInView} from "react-intersection-observer";
+import {ScrollToView} from "../../context/ScrollToViewContext";
 
 const MyProjects = () => {
+    
+    const { scrollToComponent } = useContext(ScrollToView);
     
     const { ref: myFirstProject, inView: myFirstProjectIsVisible } = useInView({
         triggerOnce: true,
@@ -41,7 +44,9 @@ const MyProjects = () => {
             <div className="wrapper">
                 <div className="my-projects-header">
                     <h1>Projects</h1>
-                    <h3>Contact me</h3>
+                    <button onClick={ scrollToComponent }>
+                        <h3>Contact me</h3>
+                    </button>
                 </div>
                 <div className="grid-container">
                     <div ref={myFirstProject} className={`${"project"} ${"first-project"} ${myFirstProjectIsVisible ? 'my-first-project-effect' : ''}`}>

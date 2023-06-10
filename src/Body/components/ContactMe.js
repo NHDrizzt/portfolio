@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import ringImage from "../../assets/images/pattern-rings.svg";
 import Design from "../../utils/Design";
+import {ScrollToView} from "../../context/ScrollToViewContext";
 
 const ContactMe = () => {
+    const { scrollToViewRef } = useContext(ScrollToView);
+    
     return (
         <article className='contact-me'>
             {/*<Design/>*/}
-            <div className="wrapper">
+            <div className="wrapper" ref={ scrollToViewRef }>
                 <div className="contact-me-container">
                     <div className="contact-description">
                         <h1>Contact</h1>

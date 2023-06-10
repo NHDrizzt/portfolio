@@ -21,6 +21,11 @@
     gap: 25px;
 }
 
+.nav-footer-container button {
+    all: unset;
+    cursor: pointer;
+}
+
 .nav-footer-container nav {
     display: flex;
     gap: 32px;
