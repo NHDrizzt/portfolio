@@ -5,7 +5,7 @@ import ContactMe from "./components/ContactMe";
 
 const LowerContent = () => {
     return (
-        <main className='main-content'>
+        <main className='main-content main-lowercontent'>
             <MyProjects />
             <ContactMe/>
         </main>
