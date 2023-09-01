@@ -41,7 +41,7 @@ const MyProjects = () => {
     
     return (
         <article className='my-projects'>
-            <div className="wrapper">
+            <div className="wrapper test">
                 <div className="my-projects-header">
                     <h1>Projects</h1>
                     <button onClick={ scrollToComponent }>

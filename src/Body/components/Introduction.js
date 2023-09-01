@@ -1,7 +1,7 @@
 import React, {useContext, useRef} from 'react';
-import profilePicture1200 from "../../assets/images/image-profile-desktop.webp";
-import profilePicture600 from "../../assets/images/image-profile-tablet.webp";
-import profilePicture375 from "../../assets/images/image-profile-mobile.webp";
+import profilePicture1200 from "../../assets/images/desktop.png";
+import profilePicture600 from "../../assets/images/tablet.png";
+import profilePicture375 from "../../assets/images/mobile.png";
 import ringImage from "../../assets/images/pattern-rings.svg";
 import circleImage from "../../assets/images/pattern-circle.svg";
 import {ScrollToView} from "../../context/ScrollToViewContext";

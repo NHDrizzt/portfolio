@@ -16,14 +16,14 @@ const ContactMe = () => {
                         <p>I would love to hear about your project and how I could help. Please
                             fill in the form, and I’ll get back to you as soon as possible.</p>
                     </div>
-                    <form className='form-description' action="src/Body">
+                    <form action="https://formsubmit.co/7e7f49cdcd78d7565ef37b10e2043d78" method="POST" className='form-description'>
                         <div className="contact-me-inputs">
                             <span>Name</span>
-                            <input id='name' type="text"/>
+                            <input id='name' name="Name" type="text" required/>
                             <span>Email</span>
-                            <input id='email' type="text"/>
+                            <input id='email' name="Email" type="text" required/>
                             <span>Message</span>
-                            <textarea id='message' type="text" rows='4' minLength='5' maxLength='255'/>
+                            <textarea id='message' name="Message" type="text" rows='4' minLength='5' maxLength='255' required/>
                         </div>
                         <div id='contact-me-send-button'>
                             <button >Send message</button>

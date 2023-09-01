@@ -74,7 +74,9 @@
 }
 
 @media (min-width: 37.5em) {
-
+    .hero-text {
+        margin-inline: auto;
+    }
 
 }
 
@@ -273,6 +275,7 @@
 }
 
 .my-projects {
+    margin-top: 120px;
     margin-bottom: 80px;
 }
 
@@ -286,6 +289,7 @@
     margin: 0 15px;
     padding: 80px 0 20px 0;
     align-items: center;
+    z-index: 999;
 }
 
 .my-projects-header button {
@@ -439,9 +443,27 @@
 }
 
 @media(min-width: 37.5em) {
-    .main-lowercontent {
-        padding-top: 350px;
+    .my-projects {
+
+        margin-inline: auto;
     }
+
+    .main-lowercontent {
+        /*padding-top: 350px;*/
+    }
+
+    .grid-container {
+        display: grid;
+        gap: 30px;
+        place-items: center;
+        width: fit-content;
+    }
+
+    .test {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @media(min-width: 62.5em) {
@@ -527,6 +549,16 @@
     margin-top: 32px;
 }
 
+.contact-me-inputs input {
+    color: white;
+}
+
+.contact-me-inputs textarea {
+    color: white;
+    resize: none;
+    height: 200px;
+}
+
 #contact-me-send-button {
     display: flex;
     justify-content: flex-end;
@@ -551,8 +583,6 @@
     letter-spacing: 2px;
     font-family: var(--ff-primary);
 }
-
-
 
 .third-ring-image {
     position: absolute;

@@ -16,13 +16,9 @@ function Header() {
                     <a href="https://github.com/NHDrizzt" target="_blank">
                         <img src={githubIcon} alt="github-icon"/>
                     </a>
-                    {/*<img src={frontEndIcon} alt="github-icon"/>*/}
                     <a href="https://www.linkedin.com/in/gabriel-de-sousa-carvalho/" target="_blank">
                         <img src={linkedinIcon} alt="github-icon"/>
                     </a>
-                    {/*<a href="">*/}
-                    {/*    <img src={twitterIcon} alt="github-icon"/>*/}
-                    {/*</a>*/}
                 </nav>
             </div>
         </header>

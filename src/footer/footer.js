@@ -18,10 +18,12 @@ function Footer() {
                     </button>
                     
                     <nav>
-                        <img src={githubIcon} alt="github-icon"/>
-                        <img src={frontEndIcon} alt="github-icon"/>
-                        <img src={linkedinIcon} alt="github-icon"/>
-                        <img src={twitterIcon} alt="github-icon"/>
+                        <a href="https://github.com/NHDrizzt" target="_blank">
+                            <img src={githubIcon} alt="github-icon"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gabriel-de-sousa-carvalho/" target="_blank">
+                            <img src={linkedinIcon} alt="github-icon"/>
+                        </a>
                     </nav>
                 </div>
             </div>
