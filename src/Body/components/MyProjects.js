@@ -1,14 +1,14 @@
 import React, {useContext} from 'react';
 import projectPictureOneLarge from "../../assets/images/thumbnail-project-1-large.webp";
 import projectOne from "../../assets/images/thumbnail-project-1-small.webp";
-import projectPictureTwoLarge from "../../assets/images/thumbnail-project-2-large.webp";
-import projectTwo from "../../assets/images/thumbnail-project-2-small.webp";
+import projectPictureTwoLarge from "../../assets/images/dictionaryApp-large.jpg";
+import projectTwo from "../../assets/images/dictionaryApp-small.jpg";
 import projectPictureThreeLarge from "../../assets/images/thumbnail-project-3-large.webp";
 import projectThree from "../../assets/images/thumbnail-project-3-small.webp";
-import projectPictureFourLarge from "../../assets/images/thumbnail-project-4-large.webp";
-import projectFour from "../../assets/images/thumbnail-project-4-small.webp";
-import projectPictureFiveLarge from "../../assets/images/thumbnail-project-5-large.webp";
-import projectFive from "../../assets/images/thumbnail-project-5-small.webp";
+import projectPictureFourLarge from "../../assets/images/apipay-large.jpg";
+import projectFour from "../../assets/images/apipay-small.jpg";
+import projectPictureFiveLarge from "../../assets/images/kanban-large.jpg";
+import projectFive from "../../assets/images/kanban-small.jpg";
 import projectPictureSixLarge from "../../assets/images/thumbnail-project-6-large.webp";
 import projectSix from "../../assets/images/thumbnail-project-6-small.webp";
 import {useInView} from "react-intersection-observer";
@@ -64,8 +64,12 @@ const MyProjects = () => {
                                     alt="project-one"/>
                             </picture>
                             <div className="project-view-code-hover middle-hover">
-                                <h3>View project</h3>
-                                <h3>View code</h3>
+                                <a href="" target="_blank">
+                                    <h3>View project - Coming...</h3>
+                                </a>
+                                <a href="https://github.com/NHDrizzt/frontend-projects/tree/master/kanban-task-management-app" target="_blank">
+                                    <h3>View code</h3>
+                                </a>
                             </div>
                         </div>
                         <h2>Design portfolio</h2>
@@ -74,8 +78,12 @@ const MyProjects = () => {
                             <p>CSS</p>
                         </div>
                         <div className="project-view-code">
-                            <h3>View project</h3>
-                            <h3>View code</h3>
+                            <a href="" target="_blank">
+                                <h3>View project</h3>
+                            </a>
+                            <a href="https://github.com/NHDrizzt/frontend-projects/tree/master/kanban-task-management-app" target="_blank">
+                                <h3>View code</h3>
+                            </a>
                         </div>
                     </div>
                     <div ref={mySecondProject} className={`${"project"} ${"second-project"} ${mySecondProjectIsVisible ? 'my-second-project-effect' : ''}`}>
@@ -90,18 +98,28 @@ const MyProjects = () => {
                                 <img className="image-effect" src={projectTwo} alt=""/>
                             </picture>
                             <div className="project-view-code-hover middle-hover">
-                                <h3>View project</h3>
-                                <h3>View code</h3>
+                                <a href="https://magical-rabanadas-1218c4.netlify.app/" target="_blank">
+                                    <h3>View project</h3>
+                                </a>
+                                <a href="https://github.com/NHDrizzt/frontend-projects/tree/master/dictionary-web-app" target="_blank">
+                                    <h3>View code</h3>
+                                </a>
                             </div>
                         </div>
-                        <h2>E-learning landing page</h2>
+                        <h2>Dictionary web app</h2>
                         <div className="project-title-tec">
                             <p>HTML</p>
                             <p>CSS</p>
+                            <p>JavaScript</p>
+                            <p>React</p>
                         </div>
                         <div className="project-view-code">
-                            <h3>View project</h3>
-                            <h3>View code</h3>
+                            <a href="https://magical-rabanadas-1218c4.netlify.app/" target="_blank">
+                                <h3>View project</h3>
+                            </a>
+                            <a href="https://github.com/NHDrizzt/frontend-projects/tree/master/dictionary-web-app" target="_blank">
+                                <h3>View code</h3>
+                            </a>
                         </div>
                     </div>
                     <div ref={myThirdProject} className={`${"project"} ${"third-project"} ${myThirdProjectIsVisible ? 'my-third-project-effect' : ''}`}>
@@ -116,8 +134,12 @@ const MyProjects = () => {
                                 <img className="image-effect" src={projectThree} alt=""/>
                             </picture>
                             <div className="project-view-code-hover middle-hover">
-                                <h3>View project</h3>
-                                <h3>View code</h3>
+                                <a href="http://tan-nose.surge.sh/" target="_blank">
+                                    <h3>View project</h3>
+                                </a>
+                                <a href="https://github.com/NHDrizzt/frontend-projects/tree/master/todo-list-app" target="_blank">
+                                    <h3>View code</h3>
+                                </a>
                             </div>
                         </div>
                         <h2>Todo web app</h2>
@@ -125,10 +147,15 @@ const MyProjects = () => {
                             <p>HTML</p>
                             <p>CSS</p>
                             <p>JavaScript</p>
+                            <p>React</p>
                         </div>
                         <div className="project-view-code">
-                            <h3>View project</h3>
-                            <h3>View code</h3>
+                            <a href="http://tan-nose.surge.sh/" target="_blank">
+                                <h3>View project</h3>
+                            </a>
+                            <a href="https://github.com/NHDrizzt/frontend-projects/tree/master/todo-list-app" target="_blank">
+                                <h3>View code</h3>
+                            </a>
                         </div>
                     </div>
                     <div ref={myFourthProject} className={`${"project"} ${"fourth-project"} ${myFourthProjectIsVisible ? 'my-fourth-project-effect' : ''}`}>
@@ -143,19 +170,28 @@ const MyProjects = () => {
                                 <img className="image-effect" src={projectFour} alt=""/>
                             </picture>
                             <div className="project-view-code-hover middle-hover">
-                                <h3>View project</h3>
-                                <h3>View code</h3>
+                                <a href="https://pretty-oranges.surge.sh/" target="_blank">
+                                    <h3>View project</h3>
+                                </a>
+                                <a href="https://github.com/NHDrizzt/frontend-projects/tree/master/payapi-multi-page-app" target="_blank">
+                                    <h3>View code</h3>
+                                </a>
                             </div>
                         </div>
-                        <h2>Entertainment web app</h2>
+                        <h2>PayApi Multi-page web app</h2>
                         <div className="project-title-tec">
                             <p>HTML</p>
                             <p>CSS</p>
                             <p>JavaScript</p>
+                            <p>React</p>
                         </div>
                         <div className="project-view-code">
-                            <h3>View project</h3>
-                            <h3>View code</h3>
+                            <a href="https://pretty-oranges.surge.sh/" target="_blank">
+                                <h3>View project</h3>
+                            </a>
+                            <a href="https://github.com/NHDrizzt/frontend-projects/tree/master/payapi-multi-page-app" target="_blank">
+                                <h3>View code</h3>
+                            </a>
                         </div>
                     </div>
                     <div ref={myFifthProject} className={`${"project"} ${"fifth-project"} ${myFifthProjectIsVisible ? 'my-fifth-project-effect' : ''}`}>
@@ -170,18 +206,20 @@ const MyProjects = () => {
                                 <img className="image-effect" src={projectFive} alt=""/>
                             </picture>
                             <div className="project-view-code-hover middle-hover">
-                                <h3>View project</h3>
-                                <h3>View code</h3>
+                                <h3>Coming...</h3>
+                                <a href="https://github.com/NHDrizzt/frontend-projects/tree/master/kanban-task-management-app" target="_blank">
+                                    <h3>View code</h3>
+                                </a>
                             </div>
                         </div>
-                        <h2>Memory Game</h2>
+                        <h2>Kanban Task Manager web app</h2>
                         <div className="project-title-tec">
                             <p>HTML</p>
                             <p>CSS</p>
                             <p>JavaScript</p>
                         </div>
                         <div className="project-view-code">
-                            <h3>View project</h3>
+                            <h3>View project - Coming...</h3>
                             <h3>View code</h3>
                         </div>
                     </div>
