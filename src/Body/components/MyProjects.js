@@ -9,8 +9,8 @@ import projectPictureFourLarge from "../../assets/images/apipay-large.jpg";
 import projectFour from "../../assets/images/apipay-small.jpg";
 import projectPictureFiveLarge from "../../assets/images/kanban-large.jpg";
 import projectFive from "../../assets/images/kanban-small.jpg";
-import projectPictureSixLarge from "../../assets/images/thumbnail-project-6-large.webp";
-import projectSix from "../../assets/images/thumbnail-project-6-small.webp";
+import projectPictureSixLarge from "../../assets/images/port-large.png";
+import projectSix from "../../assets/images/port-small.png";
 import {useInView} from "react-intersection-observer";
 import {ScrollToView} from "../../context/ScrollToViewContext";
 
@@ -220,7 +220,9 @@ const MyProjects = () => {
                         </div>
                         <div className="project-view-code">
                             <h3>View project - Coming...</h3>
-                            <h3>View code</h3>
+                            <a href="https://github.com/NHDrizzt/frontend-projects/tree/master/kanban-task-management-app" target="_blank">
+                                <h3>View code</h3>
+                            </a>
                         </div>
                     </div>
                     <div ref={mySixthProject} className={`${"project"} ${"sixth-project"} ${mySixthProjectIsVisible ? 'my-sixth-project-effect' : ''}`}>
@@ -235,20 +237,23 @@ const MyProjects = () => {
                                 <img className="image-effect" src={projectSix} alt=""/>
                             </picture>
                             <div className="project-view-code-hover middle-hover">
-                                <h3>View project</h3>
-                                <h3>View code</h3>
+                                <a href="https://github.com/NHDrizzt/portfolio" target="_blank">
+                                    <h3>View code</h3>
+                                </a>
                             </div>
                         </div>
                         
-                        <h2>Art gallery showcase</h2>
+                        <h2>My Portfolio</h2>
                         <div className="project-title-tec">
                             <p>HTML</p>
                             <p>CSS</p>
                             <p>JavaScript</p>
+                            <p>React</p>
                         </div>
                         <div className="project-view-code">
-                            <h3>View project</h3>
-                            <h3>View code</h3>
+                            <a href="https://github.com/NHDrizzt/portfolio" target="_blank">
+                                <h3>View code</h3>
+                            </a>
                         </div>
                     </div>
                 </div>
