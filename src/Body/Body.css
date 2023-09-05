@@ -431,6 +431,17 @@
     transform: translateX(0%);
 }
 
+.trybe-projects-frontend {
+    opacity: 0;
+    transform: translateY(75%);
+    transition: opacity 400ms ease-in, transform 800ms ease-in;
+}
+
+.trybe-projects-frontend.trybe-projects-frontend-effect {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
 
 @media(min-width: 37.5em) {
     .my-projects {

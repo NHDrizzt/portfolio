@@ -13,6 +13,7 @@ import projectPictureSixLarge from "../../assets/images/port-large.png";
 import projectSix from "../../assets/images/port-small.png";
 import {useInView} from "react-intersection-observer";
 import {ScrollToView} from "../../context/ScrollToViewContext";
+import TrybeProjects from "./TrybeProjects";
 
 const MyProjects = () => {
     
@@ -256,6 +257,7 @@ const MyProjects = () => {
                             </a>
                         </div>
                     </div>
+                    <TrybeProjects />
                 </div>
             </div>
         </article>
