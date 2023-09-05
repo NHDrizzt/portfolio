@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import ringImage from "../../assets/images/pattern-rings.svg";
-import Design from "../../utils/Design";
 import {ScrollToView} from "../../context/ScrollToViewContext";
 
 const ContactMe = () => {
@@ -26,7 +25,7 @@ const ContactMe = () => {
                             <textarea id='message' name="Message" type="text" rows='4' minLength='5' maxLength='255' required/>
                         </div>
                         <div id='contact-me-send-button'>
-                            <button >Send message</button>
+                            <button>Send message</button>
                         </div>
                     </form>
                 </div>

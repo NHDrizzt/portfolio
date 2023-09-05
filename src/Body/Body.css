@@ -598,6 +598,7 @@
     margin-bottom: 87px;
     letter-spacing: 2px;
     font-family: var(--ff-primary);
+    cursor: pointer;
 }
 
 .third-ring-image {
