@@ -37,7 +37,7 @@ const MyExperience = () => {
                     </div>
                     <div id="tailwind" ref={myTailwindRef} className={`${'my-experience-tailwind'} ${myTailwindIsVisible ? 'my-experience-tailwind-effect' : ''}`}>
                         <h1>Tailwind</h1>
-                        <p>3 Months Experience</p>
+                        <p>6 Months Experience</p>
                     </div>
                 </div>
                 <picture>
