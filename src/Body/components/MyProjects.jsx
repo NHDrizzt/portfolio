@@ -57,7 +57,7 @@ const MyProjects = () => {
                                 <img className="image-effect" src={projectFive} alt=""/>
                             </picture>
                             <div className="project-view-code-hover middle-hover">
-                                <a href="https://kanban-taskmanagement-bciooutrp-nhdrizzt.vercel.app" target="_blank" rel="noreferrer">
+                                <a href="https://kanban-taskmanagement.vercel.app" target="_blank" rel="noreferrer">
                                     <h3>View Project</h3>
                                 </a>
                                 <a href="https://github.com/NHDrizzt/frontend-projects/tree/master/kanban-task-management-app" target="_blank" rel="noreferrer">
