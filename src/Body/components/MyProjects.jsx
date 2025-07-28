@@ -9,6 +9,7 @@ import projectPictureFiveLarge from "../../assets/images/kanban-large.jpg";
 import projectFive from "../../assets/images/kanban-small.jpg";
 import projectPictureSixLarge from "../../assets/images/port-large.png";
 import projectSix from "../../assets/images/port-small.png";
+import ecommerceMain from "../../assets/images/ecomerceMain.jpg";
 import {useInView} from "react-intersection-observer";
 import {ScrollToView} from "../../context/ScrollToViewContext";
 import TrybeProjects from "./TrybeProjects";
@@ -16,6 +17,10 @@ import TrybeProjects from "./TrybeProjects";
 const MyProjects = () => {
     
     const { scrollToComponent } = useContext(ScrollToView);
+    
+    const { ref: ecommerce, inView: ecommerceIsVisible } = useInView({
+        triggerOnce: true,
+    });
     
     const { ref: myFirstProject, inView: myFirstProjectIsVisible } = useInView({
         triggerOnce: true,
@@ -41,10 +46,49 @@ const MyProjects = () => {
                 <div className="my-projects-header">
                     <h1>Projects</h1>
                     <button onClick={ scrollToComponent }>
-                        <h3>Contact me</h3>
+                        <h3 className={"hero-content-hover"}>Contact me</h3>
                     </button>
                 </div>
                 <div className="grid-container">
+                    <div ref={ecommerce} className={`${"project"} ${"fifth-project"} ${ecommerceIsVisible ? 'my-fifth-project-effect' : ''}`}>
+                        <div className="proj-hover">
+                            <picture>
+                                <source
+                                    media="(min-width: 62.5em)"
+                                    srcSet={ecommerceMain}
+                                    width="540px"
+                                    height="400px"
+                                />
+                                <img className="image-effect" src={ecommerceMain} alt=""/>
+                            </picture>
+                            <div className="project-view-code-hover middle-hover">
+                                <a href="https://e-style-nest.vercel.app/" target="_blank" rel="noreferrer">
+                                    <h3>View Project</h3>
+                                </a>
+                                <a href="https://github.com/NHDrizzt/EStyleNest" target="_blank" rel="noreferrer">
+                                    <h3>View code</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <h2>E-commerce Website</h2>
+                        <div className="project-title-tec">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                            <p>Typescript</p>
+                            <p>React</p>
+                            <p>Tailwind</p>
+                            <p>Redux</p>
+                        </div>
+                        <div className="project-view-code">
+                            <a href="https://e-style-nest.vercel.app/" target="_blank" rel="noreferrer">
+                                <h3>View Project</h3>
+                            </a>
+                            <a href="https://github.com/NHDrizzt/EStyleNest" target="_blank" rel="noreferrer">
+                                <h3>View code</h3>
+                            </a>
+                        </div>
+                    </div>
                     <div ref={myFirstProject} className={`${"project"} ${"fifth-project"} ${myFirstProjectIsVisible ? 'my-fifth-project-effect' : ''}`}>
                         <div className="proj-hover">
                             <picture>

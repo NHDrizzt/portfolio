@@ -16,6 +16,10 @@
     border-bottom: 1px solid var(--clr-white);
 }
 
+.hero-content-hover:hover {
+    color: var(--clr-primary-flow);
+}
+
 .hero-text button {
     all: unset;
     cursor: pointer;

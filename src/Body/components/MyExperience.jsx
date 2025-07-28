@@ -17,15 +17,15 @@ const MyExperience = () => {
                 <div className={`${'my-experience-container'}`}>
                     <div id='html' ref={myHtmlRef} className={`${'my-experience-html'} ${myHtmlIsVisible ? 'my-experience-html-effect' : ''}`}>
                         <h1>HTML</h1>
-                        <p>1 Year Experience</p>
+                        <p>1.5 Year Experience</p>
                     </div>
                     <div id="CSS" ref={myCssRef} className={`${'my-experience-css'} ${myCssIsVisible ? 'my-experience-css-effect' : ''}`}>
                         <h1>CSS</h1>
-                        <p>1 Year Experience</p>
+                        <p>1.5 Year Experience</p>
                     </div>
                     <div id="javascript" ref={myJsRef} className={`${'my-experience-js'} ${myJsIsVisible ? 'my-experience-js-effect' : ''}`}>
                         <h1>JavaScript</h1>
-                        <p>1 Year Experience</p>
+                        <p>1.5 Year Experience</p>
                     </div>
                     <div id="acessibility" ref={myAccRef} className={`${'my-experience-acc'} ${myAccIsVisible ? 'my-experience-acc-effect' : ''}`}>
                         <h1>Accessibility</h1>
@@ -33,11 +33,11 @@ const MyExperience = () => {
                     </div>
                     <div id="react" ref={myReactRef} className={`${'my-experience-react'} ${myReactIsVisible ? 'my-experience-react-effect' : ''}`}>
                         <h1>React</h1>
-                        <p>1 Year Experience</p>
+                        <p>1.5 Year Experience</p>
                     </div>
                     <div id="tailwind" ref={myTailwindRef} className={`${'my-experience-tailwind'} ${myTailwindIsVisible ? 'my-experience-tailwind-effect' : ''}`}>
                         <h1>Tailwind</h1>
-                        <p>6 Months Experience</p>
+                        <p>1.5 Months Experience</p>
                     </div>
                 </div>
                 <picture>

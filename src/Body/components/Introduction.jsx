@@ -23,10 +23,10 @@ const Introduction = () => {
                     <img className='circle-image' src={circleImage} alt="circle"/>
                     <div className="hero-text">
                         <h1>Nice to meet you! <br/> I'm <span>Gabriel Carvalho.</span></h1>
-                        <p>Based in the BR, I'm a fullstack developer passionate about
+                        <p>Based in the BR, I'm a frontend developer passionate about
                             building accessible web apps that users love.</p>
                         <button onClick={ scrollToComponent }>
-                            <h3>Contact me</h3>
+                            <h3 className={`hero-content-hover`}>Contact me</h3>
                         </button>
                     </div>
                 </div>

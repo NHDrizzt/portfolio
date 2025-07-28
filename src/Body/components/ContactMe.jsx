@@ -25,7 +25,7 @@ const ContactMe = () => {
                             <textarea id='message' name="Message" type="text" rows='4' minLength='5' maxLength='255' required/>
                         </div>
                         <div id='contact-me-send-button'>
-                            <button>Send message</button>
+                            <button >Send message</button>
                         </div>
                     </form>
                 </div>
